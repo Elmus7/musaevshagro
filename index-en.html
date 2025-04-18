@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Musaevshagro – Nursery Complex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="logo2 копия.png" alt="Musaevshagro Logo" />
+  </div>
+  <nav>
+    <button class="menu-toggle">☰</button>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contacts</a>
+    </div>
+    <button class="language-toggle" onclick="toggleLanguage()">EN / RU</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="video-wrapper">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="VIDEO.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+  <div class="hero-text">
+    <h1>Musaevshagro</h1>
+    <a href="#about" class="location-link">
+      🗺 Where nature meets <strong>technology</strong>
+    </a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2 class="magic-title" data-aos="fade-down">About Us</h2>
+    <div class="two-columns">
+      <div class="glass-box" data-aos="fade-up" data-aos-delay="150">
+        <div class="text animated-text">
+          <p>
+            We are the <strong class="gold-glow">Musaevshagro</strong> team, creating
+            <span class="highlighted">ideal conditions</span> for growing seedlings.
+            Our goal is a <span class="green-glow">green future for Uzbekistan</span>.
+          </p>
+          <p>
+            We care for every plant, apply
+            <span class="highlighted">modern technologies</span>
+            and support <span class="highlighted">eco-friendly practices</span>.
+          </p>
+        </div>
+      </div>
+      <div class="image" data-aos="fade-left" data-aos-delay="300">
+        <img src="images/photo1.jpg" alt="About Us" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section light">
+  <div class="container" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/icon.svg1.png" alt="Growing" />
+        <h3>Growing</h3>
+        <p>Professional seedling cultivation for any need.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/icon3.svg.png" alt="Sales" />
+        <h3>Sales</h3>
+        <p>A wide range of plants available all year round.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/icon4.svg.png" alt="Delivery" />
+        <h3>Delivery</h3>
+        <p>Convenient delivery throughout Tashkent and Central Asia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="container" data-aos="zoom-in">
+    <h2>Our Gallery</h2>
+    <div class="gallery">
+      <a href="images/photo1.jpg" data-lightbox="gallery" class="gallery-item">
+        <img src="images/photo1.jpg" alt="Photo 1" loading="lazy" />
+      </a>
+      <!-- Add other gallery items as needed -->
+    </div>
+  </div>
+</section>
+
+<section id="location" class="section light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="magic-title">Where to Find Us</h2>
+    <p class="location-description">Address: Nazarbek Istiqlol 2, Tashkent, Uzbekistan</p>
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?..."
+        class="magic-map"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="yandex-wrapper" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://yandex.uz/maps/-/CHbBnVkR" target="_blank" class="location-link">
+        🗺 Open location on <strong>Yandex Map</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="partners" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Our Partners</h2>
+    <div class="partners-logos">
+      <img src="images/partner1.png.jpg" alt="Partner 1" data-aos="fade-right" />
+      <!-- Add other partners as needed -->
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section light">
+  <div class="container elegant-contacts" data-aos="fade-up">
+    <h2>Contacts</h2>
+    <div class="phone-block">
+      <p><span>📞</span> <a href="tel:+998988121661">+998 (98) 812-16-61</a> <em>— Islom</em></p>
+      <p><span>📞</span> <a href="tel:+998987771996">+998 (98) 777-19-96</a> <em>— Ubaydullo</em></p>
+    </div>
+    <div class="luxury-email" data-aos="zoom-in">
+      <a href="mailto:musaevshagro@example.com" class="luxury-email-link">
+        ✉ musaevshagro@example.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Musaevshagro. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script>
+    AOS.init();
+  
+    // Проверка при загрузке — откроем нужную версию
+    window.addEventListener("load", () => {
+      const savedLang = localStorage.getItem("siteLang");
+      const currentLang = document.documentElement.lang;
+  
+      if (savedLang && savedLang !== currentLang) {
+        if (savedLang === "en") location.href = "index-en.html";
+        else location.href = "index.html";
+      }
+    });
+  
+    // Переключатель языка
+    function toggleLanguage() {
+      const currentLang = document.documentElement.lang;
+      if (currentLang === "ru") {
+        localStorage.setItem("siteLang", "en");
+        location.href = "index-en.html";
+      } else {
+        localStorage.setItem("siteLang", "ru");
+        location.href = "index.html";
+      }
+    }
+  </script>
+  
+
+<a href="https://t.me/musaevsh_agro" class="social-icon telegram-float" target="_blank">
+  <img src="images/telegram-icon.png" alt="Telegram" />
+</a>
+<a href="https://www.instagram.com/musaevshagro" class="social-icon instagram-float" target="_blank">
+  <img src="images/instagram-icon.png" alt="Instagram" />
+</a>
+
+<button id="toTop" aria-label="Back to Top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</button>
+
+</body>
+</html>

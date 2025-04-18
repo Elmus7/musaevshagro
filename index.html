@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>Musaevshagro – Комплекс для саженцев</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --text-color: #333;
+      --accent-color: #1b5e20;
+    }
+    [data-theme="dark"] {
+      --bg-color: #111;
+      --text-color: #eee;
+      --accent-color: #4caf50;
+    }
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s, color 0.3s;
+      cursor: url('images/cursor.png'), auto;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: var(--accent-color);
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 20vh;
+    }
+    .btn-main {
+      display: inline-block;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(90deg, #43a047, #66bb6a);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+    }
+    .btn-main:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #66bb6a, #81c784);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <header>
+    <div class="logo-container">
+      <img src="logo2 копия.png" alt="Логотип Musaevshagro">
+    </div>
+    <nav>
+      <button class="menu-toggle">☰</button>
+      <div class="nav-links">
+        <a href="#">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      
+      
+      <!-- Кнопка смены языка -->
+<button class="language-toggle" onclick="toggleLanguage()">EN / RU</button>
+
+
+    </nav>
+  </header>
+
+  <button class="theme-toggle-vertical" onclick="toggleTheme()" aria-label="Сменить тему">🌙<br>☀️
+   </button>
+   
+   <section class="hero">
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="VIDEO.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="hero-text">
+      <h1>Musaevshagro</h1>
+      <a href="#about" class="location-link">
+        🗺 Где природа встречается с <strong>технологиями</strong>
+      </a>
+      
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Здесь продолжаются остальные секции: about, services, gallery, location, partners, contact, footer -->
+
+  <!-- О нас -->
+<section id="about" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2 class="magic-title" data-aos="fade-down">О нас</h2>
+
+    <div class="two-columns">
+      <!-- Стеклянная карточка с текстом -->
+      <div class="glass-box" data-aos="fade-up" data-aos-delay="150">
+        <div class="text animated-text">
+          <p>
+            Мы — команда <strong class="gold-glow">Musaevshagro</strong>, создающая
+            <span class="highlighted">лучшие условия</span> для выращивания саженцев.
+            Наша цель — <span class="green-glow">зелёное будущее Узбекистана</span>.
+          </p>
+          <p>
+            Мы заботимся о каждом растении, применяем
+            <span class="highlighted">современные технологии</span>
+            и поддерживаем <span class="highlighted">экологичный подход</span>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Фото -->
+      <div class="image" data-aos="fade-left" data-aos-delay="300">
+        <img src="images/photo1.jpg" alt="О нас">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Services Section -->
+<section id="services" class="section light">
+  <div class="container" data-aos="fade-up">
+    <h2>Наши услуги</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/icon.svg1.png" alt="Выращивание">
+        <h3>Выращивание</h3>
+        <p>Профессиональное выращивание саженцев под любые нужды.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/icon3.svg.png" alt="Продажа">
+        <h3>Продажа</h3>
+        <p>Широкий ассортимент растений, доступный круглый год.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/icon4.svg.png" alt="Доставка">
+        <h3>Доставка</h3>
+        <p>Удобная доставка по Ташкенту и всей средней Азии.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="section">
+  <div class="container" data-aos="zoom-in">
+    <h2>Наша галерея</h2>
+    <div class="gallery">
+      <a href="images/photo1.jpg" data-lightbox="gallery" class="gallery-item">
+        <img src="images/photo1.jpg" alt="Фото 1" loading="lazy">
+      </a>
+      <a href="images/photo2.jpg" data-lightbox="gallery" class="gallery-item">
+        <img src="images/photo2.jpg" alt="Фото 2" loading="lazy">
+      </a>
+      <a href="images/photo3.jpg" data-lightbox="gallery" class="gallery-item">
+        <img src="images/photo3.jpg" alt="Фото 3" loading="lazy">
+      </a>
+      <a href="images/photo4.jpg" data-lightbox="gallery" class="gallery-item">
+        <img src="images/photo4.jpg" alt="Фото 4" loading="lazy">
+      </a>
+      <a href="images/photo5.jpg" data-lightbox="gallery" class="gallery-item">
+        <img src="images/photo5.jpg" alt="Фото 5" loading="lazy">
+      </a>
+      <a href="images/photo6.jpg" data-lightbox="gallery" class="gallery-item">
+        <img src="images/photo6.jpg" alt="Фото 6" loading="lazy">
+      </a>
+      <a href="images/photo8.jpg" data-lightbox="gallery" class="gallery-item">
+          <img src="images/photo8.jpg" alt="Фото 6" loading="lazy">
+        </a>
+      <a href="images/photo9.jpg" data-lightbox="gallery" class="gallery-item">
+            <img src="images/photo9.jpg" alt="Фото 6" loading="lazy">
+          </a>
+      <a href="images/photo111.jpg" data-lightbox="gallery" class="gallery-item">
+              <img src="images/photo111.jpg" alt="Фото 6" loading="lazy">
+            </a>
+      <a href="images/photo11.jpg" data-lightbox="gallery" class="gallery-item">
+                <img src="images/photo11.jpg" alt="Фото 6" loading="lazy">
+              </a>
+      <a href="images/photo22.jpg" data-lightbox="gallery" class="gallery-item">
+                  <img src="images/photo22.jpg" alt="Фото 6" loading="lazy">
+                </a>
+                <a href="images/photo26.jpg" data-lightbox="gallery" class="gallery-item">
+                  <img src="images/photo26.jpg" alt="Фото 6" loading="lazy">
+                </a>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- Видео-секция -->
+<section id="video" class="section light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="magic-title">Наше видео</h2>
+    <div class="video-wrapper-youtube" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+      <iframe 
+        src="https://www.youtube.com/embed/TmGcoOvfMMk?si=VS62QI_SfpJEqcr-" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- Location Section -->
+<section id="location" class="section light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="magic-title">Где нас найти</h2>
+    <p class="location-description">Адрес: Назарбек Истиқлол 2, Ташкент, Узбекистан</p>
+
+    <div class="map-wrapper">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7572436007913!2d69.13021827436607!3d41.29238750188513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae89cac8350a3b%3A0x55b3108421094786!2sMusaevshagro!5e0!3m2!1sru!2s!4v1744872947876!5m2!1sru!2s"
+        class="magic-map"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="yandex-wrapper" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://yandex.uz/maps/-/CHbBnVkR" target="_blank" class="location-link">
+        🗺 Открыть локацию на <strong>Яндекс.Карте</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Partners Section -->
+<section id="partners" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Наши партнёры</h2>
+    <div class="partners-logos">
+      <img src="images/partner1.png.jpg" alt="Партнёр 1" data-aos="fade-right">
+      <img src="images/partner2.png.png" alt="Партнёр 2" data-aos="fade-up">
+      <img src="images/partner3.png.png" alt="Партнёр 3" data-aos="fade-left">
+      <img src="images/partner4.png.png" alt="Партнёр 4" data-aos="fade-down">
+      <img src="images/partner5.png.png" alt="Партнёр 5" data-aos="zoom-in">
+      <img src="images/partner6.png.png" alt="Партнёр 6" data-aos="fade-up-right">
+      <img src="images/partner7.png.jpg" alt="Партнёр 7" data-aos="fade-down-left">
+      <img src="images/partner8.png.png" alt="Партнёр 8" data-aos="fade-left">
+      <img src="images/partner9.png.png" alt="Партнёр 9" data-aos="fade-right">
+      <img src="images/partner10.png.png" alt="Партнёр 10" data-aos="zoom-in-up">
+      <img src="images/partner11.png.png" alt="Партнёр 11" data-aos="zoom-in-down">
+      <img src="images/partner12.png.jpg" alt="Партнёр 12" data-aos="fade-up-left">
+      <img src="images/partner13.png.jpg" alt="Партнёр 13" data-aos="fade-down-right">
+      <img src="images/partner14.png" alt="Партнёр 14" data-aos="flip-left">
+      <img src="images/partner15.png" alt="Партнёр 15" data-aos="flip-right">
+      <img src="images/partner16.png" alt="Партнёр 16" data-aos="zoom-in">
+      <img src="images/partner17.png" alt="Партнёр 17" data-aos="fade-up">
+      <img src="images/partner18.png" alt="Партнёр 18" data-aos="fade-down">
+      <img src="images/partner19.png" alt="Партнёр 19" data-aos="fade-left">
+      <img src="images/partner20.png" alt="Партнёр 20" data-aos="fade-right">
+      <img src="images/partner21.jpg" alt="Партнёр 21" data-aos="zoom-in">
+      <img src="images/partner22.jpg" alt="Партнёр 22" data-aos="fade-up">
+      <img src="images/partner23.jpg" alt="Партнёр 23" data-aos="fade-down">
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section light">
+  <div class="container elegant-contacts" data-aos="fade-up">
+    <h2>Контакты</h2>
+    <div class="phone-block">
+      <p><span>📞</span> <a href="tel:+998988121661">+998 (98) 812-16-61</a> <em>— Islom</em></p>
+      <p><span>📞</span> <a href="tel:+998987771996">+998 (98) 777-19-96</a> <em>— Ubaydullo</em></p>
+    </div>
+    <div class="luxury-email" data-aos="zoom-in">
+      <a href="mailto:Elzodmi8lite@gmail.com" class="luxury-email-link">
+        ✉ musaevshagro@example.com
+      </a>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Musaevshagro. Все права защищены.</p>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    AOS.init();
+    function toggleTheme() {
+      document.documentElement.dataset.theme =
+        document.documentElement.dataset.theme === "dark" ? "" : "dark";
+    }
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle?.addEventListener('click', () => {
+      navLinks?.classList.toggle('active');
+    });
+    const toTopButton = document.getElementById("toTop");
+    window.addEventListener("scroll", () => {
+      if (toTopButton) toTopButton.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    toTopButton?.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    if (!localStorage.getItem("theme")) {
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.dataset.theme = prefersDark ? "dark" : "";
+}
+
+  </script>
+
+  <!-- Социальные иконки -->
+<a href="https://t.me/musaevsh_agro" class="social-icon telegram-float" target="_blank">
+  <img src="images/telegram-icon.png" alt="Telegram">
+</a>
+
+<a href="https://www.instagram.com/musaevshagro" class="social-icon instagram-float" target="_blank">
+  <img src="images/instagram-icon.png" alt="Instagram">
+</a>
+
+<script>
+  // Проверка языка при загрузке
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("siteLang");
+    const currentLang = document.documentElement.lang;
+
+    // Только если язык не совпадает и нет перенаправления только что
+    if (savedLang && savedLang !== currentLang && !sessionStorage.getItem("justSwitched")) {
+      if (savedLang === "en") location.href = "index-en.html";
+      else location.href = "index.html";
+    }
+
+    // Удаляем флаг после перенаправления
+    sessionStorage.removeItem("justSwitched");
+  });
+
+  function toggleLanguage() {
+    const currentLang = document.documentElement.lang;
+    if (currentLang === "ru") {
+      localStorage.setItem("siteLang", "en");
+      sessionStorage.setItem("justSwitched", "1");
+      location.href = "index-en.html";
+    } else {
+      localStorage.setItem("siteLang", "ru");
+      sessionStorage.setItem("justSwitched", "1");
+      location.href = "index.html";
+    }
+  }
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
