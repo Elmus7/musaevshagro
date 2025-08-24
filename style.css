@@ -1049,7 +1049,7 @@ footer {
 #founder .image img {
   width: 100%;
   max-width: 300px;        /* базовый размер */
-  transform: scale(1.15);  /* увеличение на 35% */
+  transform: scale(1.10);  /* увеличение на 35% */
   object-fit: cover;       /* фото обрезается красиво */
   object-position: center 30%; /* смещение — имитация приближения на 30% */
   border-radius: 18px;
@@ -1058,9 +1058,10 @@ footer {
 }
 
 #founder .image img:hover {
-  transform: scale(1.20);      /* ещё немного ближе при наведении */
-  object-position: center 25%; /* чуть выше кадр */
+  transform: scale(1.15);      /* ещё немного ближе при наведении */
+  object-position: center 5%; /* чуть выше кадр */
 }
+
 
 
 
