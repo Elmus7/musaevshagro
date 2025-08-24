@@ -1044,3 +1044,22 @@ footer {
   background: linear-gradient(90deg, #388e3c, #66bb6a);
   transform: scale(1.05);
 }
+
+/* Фото основателя — увеличение и приближение */
+#founder .image img {
+  width: 100%;
+  max-width: 300px;        /* базовый размер */
+  transform: scale(1.35);  /* увеличение на 35% */
+  object-fit: cover;       /* фото обрезается красиво */
+  object-position: center 30%; /* смещение — имитация приближения на 30% */
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, object-position 0.4s ease;
+}
+
+#founder .image img:hover {
+  transform: scale(1.45);      /* ещё немного ближе при наведении */
+  object-position: center 25%; /* чуть выше кадр */
+}
+
+
